@@ -530,7 +530,7 @@ Agility.RegisterNamespace("Agility.UGC.API");
 
 		var url = _buildAPIUrl("InsertRecordHistory", [recordID]);
 
-		_submitPostData(url, postData, callback);
+		_submitPostData(url, postData, callback);gu
 
 
 	}
