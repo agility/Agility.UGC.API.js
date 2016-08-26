@@ -1,2 +1,2 @@
-# PersistJS
-JavaScript Library to facilitate client-side persistence. Includes helpers for: cookies, local/session storage and registering namespaces.
+# Agility.UGC.API.js
+JavaScript Library to facilitate client-side interaction with Agility UGC API.
