@@ -6,7 +6,7 @@ JavaScript Library to facilitate client-side interaction with Agility UGC API. C
 npm install agility-ugc
 ```
 
-## Register Client
+## Initialize Client
 You must intialize the client with several values specific to you, you will then hash it and pass the values to the UGC sdk. The SDK will automatically look for this variable in your global namespace. The AccessHash should be computed server-side in order to protect your SecretKey.
 
 **You need an Access Key and Secret Key in order to generate your access hash. Contact support@agilitycms.com if do you do not have one.**
