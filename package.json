@@ -1,6 +1,6 @@
 {
   "name": "agility-ugc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JavaScript Library sdk to facilitate client-side interaction with Agility UGC.",
   "main": "src/agility-ugc-api.js",
   "repository": {
