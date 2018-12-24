@@ -1,4 +1,4 @@
-# Agility.UGC.API.js
+# Agility User Generated Content API - JS SDK
 JavaScript Library to facilitate client-side interaction with Agility UGC API. Currently, this only supports being used in the browser.
 
 ## Installation
