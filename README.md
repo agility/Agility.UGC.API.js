@@ -41,11 +41,11 @@ ugcClient.GetRecord(1027, function(data) {
 ```
 
 ## Documentation
-[UGC API Overview](https://help.agilitycms.com/hc/en-us/articles/360008888172-UGC-API-Overview)
-[UGC Definitions](https://help.agilitycms.com/hc/en-us/articles/360008883612-UGC-Definitions)
-[UGC Record Object](https://help.agilitycms.com/hc/en-us/articles/360009075531-UGC-Record-Object)
-[UGC Core API Reference](https://help.agilitycms.com/hc/en-us/articles/360020332731-UGC-Core-API)
-[UGC Website Users API Reference](https://help.agilitycms.com/hc/en-us/articles/360020074932-UGC-Website-Users-API)
-[UGC Comments API Reference](https://help.agilitycms.com/hc/en-us/articles/360020075272-UGC-Comments-API)
-[UGC Feedback API Reference](https://help.agilitycms.com/hc/en-us/articles/360020328931-UGC-Feedback-API)
+- [UGC API Overview](https://help.agilitycms.com/hc/en-us/articles/360008888172-UGC-API-Overview)
+- [UGC Definitions](https://help.agilitycms.com/hc/en-us/articles/360008883612-UGC-Definitions)
+- [UGC Record Object](https://help.agilitycms.com/hc/en-us/articles/360009075531-UGC-Record-Object)
+- [UGC Core API Reference](https://help.agilitycms.com/hc/en-us/articles/360020332731-UGC-Core-API)
+- [UGC Website Users API Reference](https://help.agilitycms.com/hc/en-us/articles/360020074932-UGC-Website-Users-API)
+- [UGC Comments API Reference](https://help.agilitycms.com/hc/en-us/articles/360020075272-UGC-Comments-API)
+- [UGC Feedback API Reference](https://help.agilitycms.com/hc/en-us/articles/360020328931-UGC-Feedback-API)
 
