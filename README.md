@@ -11,7 +11,7 @@ You must intialize the client with several values specific to you, you will then
 
 **You need an Access Key and Secret Key in order to generate your access hash. Contact support@agilitycms.com if do you do not have one.**
 
-```
+``` javascript
 //set a global window variable with the following values:
 var _AgilityUGCSettings = { 
     'Url': 'https://ugc.agilitycms.com/Agility-UGC-API-JSONP.svc',
@@ -20,13 +20,12 @@ var _AgilityUGCSettings = {
     'RandomNumber': '205', //just a random number between 1-1000
     'ProfileRecordID': '-1', //the profile record ID of the logged-in website user, -1 is anonymous
     'AccessHash': '7c690bdac92defff3a676e24ded04c5xxxxxxx' //The SHA hash of all the above variables
-                                                //(Seconds.ProfileID.SecretKey.AccessKey.Random)
-                                                //**Secret Key will also be provided to you
+                                                           //(Seconds.ProfileID.SecretKey.AccessKey.Random)
 };
 ```
 
 ## Usage
-```
+``` javascript
 import ugcClient from 'agility-ugc'
 
 ugcClient.GetRecord(1027, function(data) {	
@@ -36,7 +35,7 @@ ugcClient.GetRecord(1027, function(data) {
     } else {
         //data.ResponseData is a "Record" object
         var record = data.ResponseData;
-        console.log(record)	;
+        console.log(record);
     }
 })
 ```
