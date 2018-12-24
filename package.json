@@ -1,8 +1,8 @@
 {
-  "name": "agility-ugc-api-js",
-  "version": "1.0.0",
-  "description": "JavaScript Library to facilitate client-side interaction with Agility UGC.",
-  "main": "src/Agility.UGC.API.js",
+  "name": "agility-ugc",
+  "version": "1.0.2",
+  "description": "JavaScript Library sdk to facilitate client-side interaction with Agility UGC.",
+  "main": "src/agility-ugc-api.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/AgilityInc/Agility.UGC.API.js.git"
@@ -22,11 +22,11 @@
       "email": "joel@agilitycms.com"
     },
     {
-      "name": "Pim Brouwers",
-      "email": "pim@agilitycms.com"
+      "name": "Tunc Ekiz",
+      "email": "tunc@agilitycms.com"
     },
     {
-      "name": "James Viddler",
+      "name": "James Vidler",
       "email": "james@agilitycms.com"
     }
   ],
@@ -35,7 +35,6 @@
     "url": "https://github.com/AgilityInc/Agility.UGC.API.js/issues"
   },
   "dependencies": {
-    "jQuery": ">=1.3.0",
-    "Agility.js": ">=1.0.0" 
+    "agility": "^1.0.1"
   }
 }
