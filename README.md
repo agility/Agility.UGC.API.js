@@ -24,7 +24,7 @@ var _AgilityUGCSettings = {
 };
 ```
 
-*see Generating a [UGC Access Hash in .NET Core](https://github.com/AgilityInc/GenerateUGCAccessHash-NetCore) for a code sample on how to generate your hash and initialize your client.*
+*See Generating a [UGC Access Hash in .NET Core](https://github.com/AgilityInc/GenerateUGCAccessHash-NetCore) for a code sample on how to generate your hash and initialize your client.*
 
 ## Usage
 ``` javascript
