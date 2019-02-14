@@ -35,6 +35,6 @@
     "url": "https://github.com/AgilityInc/Agility.UGC.API.js/issues"
   },
   "dependencies": {
-    "agility": "^1.0.1"
+    "agility": "^1.0.3"
   }
 }
