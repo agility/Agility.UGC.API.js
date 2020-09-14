@@ -1571,17 +1571,62 @@ var AgilityUGCAPI = new (function () {
     });
   };
 
-  API._uploadFileToUGC = function (
-    file,
-    settings,
-    callback,
-    errorCallback,
-    alwaysCallback,
-    progressCallback
-  ) {
-    //TODO: update this to support file uploads - exactly like they are handled within the Form Builder
-    _logError("This method has not been implemented yet in this version.");
-  };
+  API._uploadFileToUGC = function (file, settings, callback, errorCallback, alwaysCallback, progressCallback) {
+
+		var returnUrl = location.href;
+		returnUrl = returnUrl.substring(0, returnUrl.indexOf("/", returnUrl.indexOf("//") + 2));
+		returnUrl += Agility.ResolveUrl(API.RedirectorUrl);
+		var blankUrl = Agility.ResolveUrl(API.RedirectorUrl);
+		var url = API.APIUrl;
+		url = url.toLowerCase();
+		url = url.replace("http://", "https://");
+		url = url.replace("/agility-ugc-api-jsonp.svc", "/ugc-api");
+		if (url.lastIndexOf("/") != url.length - 1) url += "/";
+		url += "Upload";
+		var formData = new FormData();
+		formData.append("accessKey", API.APIAccessKey);
+		formData.append("seconds", API.APISeconds);
+		formData.append("randomNumber", API.APIRandomNumber);
+		formData.append("hash", API.APIHash);
+		formData.append("profileRecordID", API.APIProfileRecordID);
+		formData.append("file", file);
+		return $.ajax({
+			url: url,
+			xhr: function () {  // Custom XMLHttpRequest
+				var myXhr = $.ajaxSettings.xhr();
+				if (myXhr.upload) { // Check if upload property exists
+					if ($.isFunction(progressCallback)) {
+						myXhr.upload.addEventListener('progress', progressCallback, false);
+					}
+				}
+				return myXhr;
+			},
+			type: 'POST',
+			data: formData,
+			processData: false,
+			contentType: false,
+			xhrFields: {
+				withCredentials: true
+			},
+			crossDomain: true
+		}).done(function (result) {
+			callback(result);
+		}).fail(function (err, status, errorMessage) {
+			if (status == "abort") {
+				//do nothing...
+				return;
+			}
+			if (errorCallback != undefined && $.isFunction(errorCallback)) {
+				errorCallback(errorMessage, status);
+			}
+		})
+		.always(function () {
+			if (alwaysCallback != undefined && $.isFunction(alwaysCallback)) {
+				alwaysCallback();
+			}
+    });
+    
+	}
 
   API._uploadFileToAmazonS3 = function (
     file,
