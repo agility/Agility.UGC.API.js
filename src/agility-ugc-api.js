@@ -1573,10 +1573,6 @@ var AgilityUGCAPI = new (function () {
 
   API._uploadFileToUGC = function (file, settings, callback, errorCallback, alwaysCallback, progressCallback) {
 
-		var returnUrl = location.href;
-		returnUrl = returnUrl.substring(0, returnUrl.indexOf("/", returnUrl.indexOf("//") + 2));
-		returnUrl += Agility.ResolveUrl(API.RedirectorUrl);
-		var blankUrl = Agility.ResolveUrl(API.RedirectorUrl);
 		var url = API.APIUrl;
 		url = url.toLowerCase();
 		url = url.replace("http://", "https://");
